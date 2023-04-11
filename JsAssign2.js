@@ -88,6 +88,33 @@ function getObjectFromLocalStorage(key) {
 
   const myObject1 = getObjectFromLocalStorage('my-object');
   console.log(myObject1);
+
+
+
+// task 8
+
+function saveObjectPropertiesToLocalStorage(obj) {
+    // Save each property to localStorage using the property name as the key
+    for (const prop in obj) {
+      if (obj.hasOwnProperty(prop)) {
+        localStorage.setItem(prop, obj[prop]);
+      }
+    }
+  
+    // Retrieve the object from localStorage and return it as a new object
+    const newObj = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      const value = localStorage.getItem(key);
+      newObj[key] = value;
+    }
+    return newObj;
+  }
+  
+  const myObject3 = { name: 'abdul Haseeb', age: 21 };
+  const storedObject = saveObjectPropertiesToLocalStorage(myObject3);
+  console.log(storedObject);
+  
   
   
   
