@@ -78,5 +78,16 @@ function saveObjectToLocalStorage(key, object) {
   
   const myObject = { name: 'haseeb', age: 21 };
   saveObjectToLocalStorage('my-object', myObject);
+
+//  task 7
+
+function getObjectFromLocalStorage(key) {
+    const serializedObject = localStorage.getItem(key);
+    return JSON.parse(serializedObject);
+  }
+
+  const myObject1 = getObjectFromLocalStorage('my-object');
+  console.log(myObject1);
+  
   
   
