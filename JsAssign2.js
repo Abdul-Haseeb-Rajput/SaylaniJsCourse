@@ -29,4 +29,15 @@ function searchArray(arr, val) {
 let myArray = [4,2,5,2,3];
 console.log(searchArray(myArray, 3)); // Output: true
 console.log(searchArray(myArray, 6)); // Output: false
-  
+
+
+
+// Task 3
+
+function addParagraph(text) {
+    let newParagraph = document.createElement('p');
+    newParagraph.textContent = text;
+    document.body.appendChild(newParagraph);
+  }
+
+addParagraph("Hello i am a new paragraph!");
