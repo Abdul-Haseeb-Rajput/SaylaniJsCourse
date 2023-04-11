@@ -66,4 +66,17 @@ function changeBackgroundColor(element, color) {
   
 let myElement = document.querySelector('#element-id');
 changeBackgroundColor(myElement, 'green');
+
+
+// task 6
+
+
+function saveObjectToLocalStorage(key, object) {
+    let serializedObject = JSON.stringify(object);
+    localStorage.setItem(key, serializedObject);
+  }
+  
+  const myObject = { name: 'haseeb', age: 21 };
+  saveObjectToLocalStorage('my-object', myObject);
+  
   
