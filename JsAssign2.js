@@ -41,3 +41,18 @@ function addParagraph(text) {
   }
 
 addParagraph("Hello i am a new paragraph!");
+
+
+// task 4
+
+
+function addListItem(text) {
+    const newListItem = document.createElement('li');
+    newListItem.textContent = text;
+    const unorderedList = document.querySelector('ul');
+    unorderedList.appendChild(newListItem);
+  }
+  
+  // Add a new list item with the text content "New item"
+addListItem('im new item');
+  
