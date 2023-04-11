@@ -55,4 +55,15 @@ function addListItem(text) {
   
   // Add a new list item with the text content "New item"
 addListItem('im new item');
+
+
+
+// task 5
+
+function changeBackgroundColor(element, color) {
+    element.style.backgroundColor = color;
+}
+  
+let myElement = document.querySelector('#element-id');
+changeBackgroundColor(myElement, 'green');
   
